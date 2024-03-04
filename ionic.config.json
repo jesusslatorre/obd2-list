@@ -1,0 +1,7 @@
+{
+  "name": "ob2-list",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
