@@ -8,7 +8,7 @@ import { Error } from '../interfaces/error';
   providedIn: 'root'
 })
 export class ServicesService {
-  static URL = "https://jesuslatorreweb.github.io/codes.json";
+  static URL = "https://jesusslatorre.github.io/codes.json";
 
   constructor(private httpClient: HttpClient) { }
 
