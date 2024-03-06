@@ -5,13 +5,16 @@ import { catchError } from 'rxjs/operators';
 import { Error } from '../interfaces/error';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ServicesService {
-  static URL = "https://jesusslatorre.github.io/codes.json";
 
-  constructor(private httpClient: HttpClient) { }
+  //Definimos la URL de donde se cogerá la información
+  static URL = 'https://jesusslatorre.github.io/codes.json';
 
+  constructor(private httpClient: HttpClient) {}
+
+  //Obtenemos el Observable
   getError(codigo: string): Observable<Error[]> {
     const url = `${ServicesService.URL}?codigo=${codigo}`;
     return this.httpClient.get<Error[]>(url).pipe(

@@ -1,29 +1,29 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Search your Error OBD2 
-    </ion-title>
+    <ion-title> Search your Error OBD2 </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-
   <ion-item id="tab2">
     <ion-icon name="search-outline" slot="start"></ion-icon>
-    <ion-input placeholder="Example Code -> P0001" [(ngModel)]="codigo"></ion-input>
+    <ion-input
+      placeholder="Example Code -> P0001"
+      [(ngModel)]="codigo"
+    ></ion-input>
     <ion-button (click)="buscarError()">Search</ion-button>
   </ion-item>
 
   <ion-progress-bar type="indeterminate" *ngIf="cargando"></ion-progress-bar>
 
-  <!-- Deslizante para la opción de guardar -->
+  <!-- Sliding para la opción de guardar -->
   <ion-list [inset]="true" *ngIf="error">
     <ion-item-sliding *ngIf="error">
       <ion-item>
         <ion-icon name="barcode-outline" slot="start"></ion-icon>
         <ion-label>
           {{error.Code}}
-          <br>
+          <br />
           {{error.Description}}
         </ion-label>
       </ion-item>
@@ -34,7 +34,6 @@
   </ion-list>
 
   <app-explore-container name="Tab 2 page"></app-explore-container>
-
 </ion-content>
 
 <ion-alert
