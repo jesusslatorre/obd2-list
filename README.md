@@ -3,9 +3,9 @@
 
 App web y móvil programada en Ionic diseñada para facilitar la búsqueda de errores genéricos OBD2.<br>
 <br>
-Es una app sencilla que te permite buscar rápidamente las descripciones de los errores que arrojan los lectores OBD2 de la mayoría de los vehículos actuales<br>
-Permite consultar, almacenar y borrar los errores de nuestro listado de forma dinámica.<br>
-Las funciones adicionales que quedan por añadir, son:
+Es una app sencilla que te permite buscar rápidamente las descripciones de los errores que arrojan los lectores OBD2 de la mayoría de los vehículos actuales.<br><br>
+Permite consultar, almacenar y borrar los errores de nuestro listado de forma dinámica.<br><br>
+Funciones pendientes:
 <ul>
   <li>Optimizar el diseño</li>
   <li>Añadir categorías de errores</li>
